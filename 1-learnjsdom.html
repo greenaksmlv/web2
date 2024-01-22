@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JS DOM</title>
+</head>
+<body>
+    <div id="firstDiv">This is the first div</div>
+    <div id="secondDiv">
+        <p>This is a paragraph in the secondDiv</p>
+        <p>This is another paragraph</p>
+    </div>
+
+    <a href="#">Click me to open Google.com</a>
+
+    <div id="parent">
+        <div id="child">
+            This is the content of the child
+        </div>
+    </div>
+
+    <script>
+        const firstDiv = document.getElementById('firstDiv');
+        firstDiv.innerHTML = "This is the new content for the first div"; 
+
+        const par = document.getElementsByTagName('p')[1];
+        par.innerHTML = "This is the new content for the paragraph";
+
+        const link1 = document.querySelector('a');
+        link1.setAttribute('herf', 'http://google.com');
+
+        const secondDiv = document.getElementById('secondDiv');
+        secondDiv.style.backgroundColor = 'red';
+
+        const child = document.getElementById('child');
+        const parent = child.parentNode;
+        parent.style.backgroundColor = 'blue';
+
+        secondDiv.addEventListener('click', function() {
+            alert("hi!");
+        });
+
+    </script>
+</body>
+</html>

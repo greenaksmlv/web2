@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JS Functions</title>
+</head>
+<body>
+    <script>
+        function green() {
+            console.log('Hi')
+        }
+
+        green();
+
+        function greenPlus(one) {
+            console.log("Green & " + one);
+        }
+
+        greenPlus("Tom Hanks");
+
+        function greenPlusChildren(one, firstChild, secondChild) {
+            console.log("Green & " + one + " & " + firstChild + " & " + secondChild)
+        }
+
+        let plusOne = "Tom Hanks";
+        let firstChile = "Tiffany";
+        let secondChild = "Glenn";
+
+        greenPlusChildren(plusOne, firstChild, secondChild);
+
+        function greenSum(a, b, c) {
+            return a + b + c;
+        }
+
+        let resultSum = greenSum(1, 2, 3,);
+        console.log(resultSum);
+
+        function greenScope(x) {
+            let y = 1;
+            return x + y;
+        }
+
+        let resultGreenScope = greenScope(7);
+        console.log(resultGreenScope);
+        console.log(y);
+
+        //Traditional Function
+        //function greenMultiply(a, b) {
+        //    return a * b;
+        //}
+
+        //Arrow Function 
+        //let greenMultiply = (a, b) => {
+        //    return a * b;
+        //}
+
+        //Arrow Function (shorter version)
+        let greenMultiply = (a, b) => a * b;
+        
+        console.log(greenMultiply(3, 3));
+
+        //function sayHi(name) {
+        //    return "Hi, " + name;
+        //}
+
+        //Arrow Function
+        let sayHi = name => "Hi, " + name;
+
+        console.log(sayHi("Green"));
+
+
+
+    </script>
+</body>
+</html>

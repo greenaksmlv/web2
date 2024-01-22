@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 Web 2</title>
+</head>
+<body>
+    <div id="green">
+        This is my first div
+    </div>
+
+    <div id="melissa">
+        <p>This is a paragraph in my second div</p>
+        <p>This is the second paragraph inside my second div</p>
+    </div>
+
+    <button id="greenMelissa">If you Know You Know</button>
+
+    <a href="#">Click here if you want to know my faculty!</a>
+
+    <form action="">
+        <input type="text" id="text">
+        <input type="submit" value="Submit">
+      </form>
+
+    <div>
+        <ul>
+            <li>Green</li>
+            <li>Melissa</li>
+            <li>GreenMelissa</li>
+        </ul>
+    </div>
+
+    <script>
+        const green = document.getElementById('green');
+        green.innerHTML = "Hello! this is my first assignment in this new semester :)";
+        green.style.backgroundColor = 'lightgreen';
+
+        const lili = document.getElementsByTagName('p')[0];
+        lili.innerHTML = "this paragraph is a new paragraph. I change the old one to the new one!!";
+
+        const faculty = document.querySelector('a');
+        faculty.setAttribute('href', 'https://fti.unai.edu');
+
+        greenMelissa.addEventListener('click', function() {
+            document.getElementsByTagName('p')[1].style.color = 'red';
+        });
+
+        const ul = document.querySelector('ul');
+            const div = ul.parentNode;
+            console.log(div);
+            const li = ul.childNodes;
+            for(let i = 0; i < li.length; i++) {
+                console.log(li[i].textContent);
+            }
+
+            const firstli = ul.firstElementChild;
+            console.log(firstli);
+            const lastli = ul.lastElementChild;
+            console.log(lastli);
+
+            const nextli = firstli.nextElementSibling;
+            console.log("Next Sibling: ", nextli.textContent);
+            const previousli = lastli.previousElementSibling;
+            console.log("Previous Sibling: ", previousli.textContent);
+
+            function validateForm() {
+                const inputText = document.getElementById("textInput").value;
+                if (inputText.trim() === "") {
+                    alert("Text input cannot be empty");
+                    return false;
+                }
+                return true;
+            }
+    </script>
+</body>
+</html>

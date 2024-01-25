@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 Web 2</title>
+</head>
+<body>
+    <script>
+        var studentPortofolio = {
+            name : "Green Melissa Nadya Mainar",
+            studentID : "2281065",
+            birthdate : "01 June 2003",
+            courses : ["Aljabar Linear", "Bahasa Inggris V", "Daniel & Wahyu", "Interaksi manusia komputer & Dampak sosial", "Pemrograman Bergerak", "Pemrograman Web II"],
+            skills : [],
+        
+
+        addCourse: function(course) {
+            this.courses.push(course);
+        },
+
+        addSkill: function(skill) {
+            this.skills.push(skill);
+        },
+
+        getAge: function(thisyear) {
+            return thisyear - 2003;
+        },
+
+        displayPortofolio: function() {
+            console.log(this.name);
+            console.log(this.studentID);
+            console.log(this.birthdate);
+            console.log(this.courses);
+            console.log(this.skills);
+        },
+
+    }
+
+    studentPortofolio.addCourse({course: "Inggris VI"});
+    studentPortofolio.addCourse({course: "Bahasa Indonesia"});
+    studentPortofolio.addCourse({course: "Multimedia"}) // Sistem Operasi, Manajemen, Grafika Komputer
+
+    studentPortofolio.addSkill({skill: "Singing"});
+    studentPortofolio.addSkill({skill: "Swimming"});
+    studentPortofolio.addSkill({skill: "Watching"});
+    studentPortofolio.addSkill({skill: "Baking"});
+        
+
+        console.log(studentPortofolio.getAge(2024));
+        console.log(studentPortofolio.displayPortofolio());
+    </script>
+</body>
+</html>

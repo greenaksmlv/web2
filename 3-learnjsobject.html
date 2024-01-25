@@ -7,11 +7,14 @@
 </head>
 <body>
     <script>
-        let student = {
+        var student = { // can use let, var or const. even by using const, u can still change the value. because u have the same structure for the object 
             name : "Green",
             studentID : "2281065",
             gender : "Female",
             major : "Informatics Engineering",
+            hello : function() {
+                console.log("Hello " + this.name + "!"); // u have to use "this." + property name
+            }
         }
 
         console.log(student.name);
@@ -19,8 +22,27 @@
         console.log(student["gender"]);
         console.log(student["major"]);
 
+        student.name = "Budi";
+        console.log(student.name);
 
-        
+        //Call a method
+        student.hello();
+
+        function Student(name, studentID, gender, major) {
+            this.name = name;
+            this.studentId = studentID;
+            this.gender = gender;
+            this.major = major;
+        }
+
+        let student1 = new Student("Abdul", "123", "Male", "IS");
+        let student2 = new Student("Badu", "231", "Male", "IE");
+        let student3 = new Student("Cecep", "456", "Female", "IE");
+
+        console.log(student1.name);
+        console.log(student2.name);
+        console.log(student3.gender);
+
     </script>
 </body>
 </html>

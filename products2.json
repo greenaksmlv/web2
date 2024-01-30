@@ -1,0 +1,16 @@
+{
+    "products" : [
+        {
+            "name" : "Apple iPhone 24 Pro",
+            "price" : 100
+        },
+        {
+            "name" : "Samsung S34 Ultra",
+            "price" : 200
+        },
+        {
+            "name" : "Xiaomi 44 Pro",
+            "price" : 300
+        }
+    ]
+}

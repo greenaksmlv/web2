@@ -7,7 +7,13 @@
 </head>
 <body>
     <script>
-        
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                let products = data.products;
+                console.log(data.products);
+
+            })
     </script>
 </body>
 </html>

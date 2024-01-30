@@ -6,6 +6,18 @@
     <title>Learn JS Object part 2</title>
 </head>
 <body>
-    
+    <script>
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+            speak() {
+                console.log(`${this.name} makes a noise.`); // ` = template literal / backticks
+            }
+        }
+
+        let cat = new Animal("Manis");
+        cat.speak();
+    </script>
 </body>
 </html>

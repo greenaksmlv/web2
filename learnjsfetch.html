@@ -15,7 +15,25 @@
                 console.log(data.products);
                 console.log(data.price);
                 console.log(data.RAM)
+            })
 
+        fetch(`products2.json`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                //Display the product name and price for item 1
+                console.log(data.products[0].name);
+                console.log(data.products[0].price);
+
+                //Display the product name and price for item 2
+                console.log(data.products[1].name);
+                console.log(data.products[1].price);
+
+                //How to display it using looping? So it will display all the data
+                for(let i=0; i<data.products.length; i++) {
+                    console.log(data.products[i].name);
+                    console.log(data.products[i].price);
+                }
             })
     </script>
 </body>

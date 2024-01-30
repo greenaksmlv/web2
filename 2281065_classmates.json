@@ -1,0 +1,47 @@
+{
+    "classmates" : [
+        {
+            "id" : 2281009,
+            "name" : "Deca Kezia Caren",
+            "age" : "20",
+            "grade" : "A",
+            "favoriteSubject" : 
+            {
+                "subjectName" : "Daniel & Wahyu",
+                "reasonForInterest" : "We have to go to Heaven",
+                "favoriteTopic" : "New Earth & New Heavens"
+            },
+
+            "hobbies" : 
+            {
+                "hobbyName" : "Reading",
+                "yearsInvolved" : "15",
+                "skillLevel" : "95"
+            },
+            "personalGoals" : "We should go to Heaven Lah"
+        },
+
+        {
+            "id" : 22810,
+            "name" : "Glori Yani Hutabarat",
+            "age" : "20",
+            "grade" : "A",
+            "favoriteSubject" : 
+            {
+                "subjectName" : "Daniel & Wahyu",
+                "reasonForInterest" : "We have to go to Heaven",
+                "favoriteTopic" : "New Earth & New Heavens"
+            },
+
+            "hobbies" : 
+            {
+                "hobbyName" : "Reading",
+                "yearsInvolved" : "15",
+                "skillLevel" : "95"
+            },
+            "personalGoals" : "We should go to Heaven Lah"
+        }
+
+    ]
+
+}

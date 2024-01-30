@@ -1,4 +1,5 @@
 {
     "products" : "iPhone 17 Pro",
-    "Price" : 999
+    "price" : 999,
+    "RAM" : "32 GB"
 }

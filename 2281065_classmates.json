@@ -7,7 +7,7 @@
             "grade" : "A",
             "favoriteSubject" : 
             {
-                "subjectName" : "Daniel & Wahyu",
+                "subjectName" : "Daniel & Revelation",
                 "reasonForInterest" : "We have to go to Heaven",
                 "favoriteTopic" : "New Earth & New Heavens"
             },
@@ -15,21 +15,105 @@
             "hobbies" : 
             {
                 "hobbyName" : "Reading",
-                "yearsInvolved" : "15",
+                "yearsInvolved" : "15 Years",
                 "skillLevel" : "95"
             },
             "personalGoals" : "We should go to Heaven Lah"
         },
 
         {
-            "id" : 22810,
+            "id" : 2281026,
             "name" : "Glori Yani Hutabarat",
             "age" : "20",
             "grade" : "A",
             "favoriteSubject" : 
             {
-                "subjectName" : "Daniel & Wahyu",
-                "reasonForInterest" : "We have to go to Heaven",
+                "subjectName" : "Web Programming II",
+                "reasonForInterest" : "Because the lecturer is Sir Andrew",
+                "favoriteTopic" : "Java Script"
+            },
+
+            "hobbies" : 
+            {
+                "hobbyName" : "Basket Ball",
+                "yearsInvolved" : "7 Years",
+                "skillLevel" : "60"
+            },
+            "personalGoals" : "becoming a successful person"
+        },
+
+        {
+            "id" : 2281020,
+            "name" : "Yosia Evan",
+            "age" : "19",
+            "grade" : "A",
+            "favoriteSubject" : 
+            {
+                "subjectName" : "Web Programming II",
+                "reasonForInterest" : "Fun",
+                "favoriteTopic" : "Java Script"
+            },
+
+            "hobbies" : 
+            {
+                "hobbyName" : "Reading",
+                "yearsInvolved" : "6 Month",
+                "skillLevel" : "90"
+            },
+            "personalGoals" : "Starting good habits"
+        },
+
+        {
+            "id" : 2281072,
+            "name" : "Hermina Harefa",
+            "age" : "20",
+            "grade" : "A",
+            "favoriteSubject" : 
+            {
+                "subjectName" : "Pemrograman Bergerak",
+                "reasonForInterest" : "Easy to Learn",
+                "favoriteTopic" : "Registration"
+            },
+
+            "hobbies" : 
+            {
+                "hobbyName" : "Footsal",
+                "yearsInvolved" : "1 Year",
+                "skillLevel" : "70"
+            },
+            "personalGoals" : "Raise the status of the Family"
+        },
+
+        {
+            "id" : 2132035,
+            "name" : "Jesicha Hilery",
+            "age" : "20",
+            "grade" : "A",
+            "favoriteSubject" : 
+            {
+                "subjectName" : "E-commerce",
+                "reasonForInterest" : "Easy",
+                "favoriteTopic" : "Digital Marketing"
+            },
+
+            "hobbies" : 
+            {
+                "hobbyName" : "Baking",
+                "yearsInvolved" : "9 Years",
+                "skillLevel" : "80"
+            },
+            "personalGoals" : "Becoming an Auditor or Manager"
+        },
+
+        {
+            "id" : 2132034,
+            "name" : "Michella Ellena Virginia Silitonga",
+            "age" : "21",
+            "grade" : "A",
+            "favoriteSubject" : 
+            {
+                "subjectName" : "",
+                "reasonForInterest" : "",
                 "favoriteTopic" : "New Earth & New Heavens"
             },
 

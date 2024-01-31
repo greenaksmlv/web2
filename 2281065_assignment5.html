@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 Web 2</title>
+</head>
+<body>
+    <script>
+        fetch(`2281065_classmates.json`)
+            .then(response => response.json())
+            .then(data => {
+                let classmates = data.classmates;
+                console.log(data);
+                console.log(data.classmates);
+                console.log(data.id);
+                
+ 
+            })
+    </script>
+</body>
+</html>

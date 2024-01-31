@@ -114,17 +114,39 @@
             {
                 "subjectName" : "",
                 "reasonForInterest" : "",
-                "favoriteTopic" : "New Earth & New Heavens"
+                "favoriteTopic" : ""
+            },
+
+            "hobbies" : 
+            {
+                "hobbyName" : "",
+                "yearsInvolved" : "",
+                "skillLevel" : ""
+            },
+            "personalGoals" : ""
+        },
+
+        {
+            "id" : 2021026,
+            "name" : "Nicole Jeanine Wuisan ",
+            "age" : "22",
+            "grade" : "A",
+            "favoriteSubject" : 
+            {
+                "subjectName" : "Public Speaking",
+                "reasonForInterest" : "The classes are challenging, and the techniques are fun",
+                "favoriteTopic" : "Waste of Presenting"
             },
 
             "hobbies" : 
             {
                 "hobbyName" : "Reading",
-                "yearsInvolved" : "15",
-                "skillLevel" : "95"
+                "yearsInvolved" : "21 Years",
+                "skillLevel" : "80"
             },
-            "personalGoals" : "We should go to Heaven Lah"
+            "personalGoals" : "Be better than I was yesterday"
         }
+
 
     ]
 

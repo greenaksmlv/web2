@@ -12,10 +12,27 @@
             .then(data => {
                 let classmates = data.classmates;
                 console.log(data);
-                console.log(data.classmates);
-                console.log(data.id);
+                console.log(data.classmates[0].id);
                 
- 
+                //Display data
+                for(let i=0; i<data.classmates.length; i++) {
+                    console.log(data.classmates[i].id);
+                    console.log(data.classmates[i].name);
+                    console.log(data.classmates[i].age);
+                    console.log(data.classmates[i].grade);
+
+                    console.log(data.classmates[i].favoriteSubject.subjectName);
+                    console.log(data.classmates[i].favoriteSubject.reasonForInterest);
+                    console.log(data.classmates[i].favoriteSubject.favoriteTopic);
+
+                    console.log(data.classmates[i].hobbies.hobbyName);
+                    console.log(data.classmates[i].hobbies.yearsInvolved);
+                    console.log(data.classmates[i].hobbies.skillLevel);
+
+                    console.log(data.classmates[i].personalGoals);
+                    
+                }
+
             })
     </script>
 </body>

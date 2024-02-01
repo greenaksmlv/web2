@@ -112,18 +112,18 @@
             "grade" : "A",
             "favoriteSubject" : 
             {
-                "subjectName" : "Hukum Pajak",
+                "subjectName" : "Hukum Bisnis",
                 "reasonForInterest" : "Because, she wants to be a tax consultant",
-                "favoriteTopic" : "Tax"
+                "favoriteTopic" : "Merger"
             },
 
             "hobbies" : 
             {
-                "hobbyName" : "",
-                "yearsInvolved" : "",
-                "skillLevel" : ""
+                "hobbyName" : "Eating spicy foods (ASMR)",
+                "yearsInvolved" : "5 years",
+                "skillLevel" : "90"
             },
-            "personalGoals" : ""
+            "personalGoals" : "She wants to take her parents to travel to europe"
         },
 
         {
@@ -155,17 +155,17 @@
             "favoriteSubject" : 
             {
                 "subjectName" : "Web Programming",
-                "reasonForInterest" : "",
-                "favoriteTopic" : "Waste of Presenting"
+                "reasonForInterest" : "Interesting",
+                "favoriteTopic" : "HTML"
             },
 
             "hobbies" : 
             {
-                "hobbyName" : "Reading",
-                "yearsInvolved" : "21 Years",
-                "skillLevel" : "80"
+                "hobbyName" : "Playing Games",
+                "yearsInvolved" : "3 Years",
+                "skillLevel" : "85"
             },
-            "personalGoals" : "Be better than I was yesterday"
+            "personalGoals" : "Always being a good person"
         }
 
 

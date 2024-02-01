@@ -112,9 +112,9 @@
             "grade" : "A",
             "favoriteSubject" : 
             {
-                "subjectName" : "",
-                "reasonForInterest" : "",
-                "favoriteTopic" : ""
+                "subjectName" : "Hukum Pajak",
+                "reasonForInterest" : "Because, she wants to be a tax consultant",
+                "favoriteTopic" : "Tax"
             },
 
             "hobbies" : 
@@ -128,13 +128,34 @@
 
         {
             "id" : 2021026,
-            "name" : "Nicole Jeanine Wuisan ",
+            "name" : "Nicole Jeanine Wuisan",
             "age" : "22",
             "grade" : "A",
             "favoriteSubject" : 
             {
                 "subjectName" : "Public Speaking",
                 "reasonForInterest" : "The classes are challenging, and the techniques are fun",
+                "favoriteTopic" : "Waste of Presenting"
+            },
+
+            "hobbies" : 
+            {
+                "hobbyName" : "Reading",
+                "yearsInvolved" : "21 Years",
+                "skillLevel" : "80"
+            },
+            "personalGoals" : "Be better than I was yesterday"
+        },
+
+        {
+            "id" : 2021024,
+            "name" : "Ferdi Yohanes",
+            "age" : "20",
+            "grade" : "A",
+            "favoriteSubject" : 
+            {
+                "subjectName" : "Web Programming",
+                "reasonForInterest" : "",
                 "favoriteTopic" : "Waste of Presenting"
             },
 

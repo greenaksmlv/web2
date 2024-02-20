@@ -25,6 +25,10 @@
 
         <h1 v-if="on">Displayed if property on is true</h1>
         <h1 v-else>Display if property on is false</h1>
+
+        Age: <input type="text" v-model="age"> <br>
+        <h1 v-if="age <= 17">You're Still Young</h1>
+        <h1 v-else>You're Old</h1>
     </div>
 
     <script>

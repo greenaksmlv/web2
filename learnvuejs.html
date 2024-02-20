@@ -19,6 +19,12 @@
         My other Favourites are {{favourites}}
         <br>
         My adrress is at {{ address }}
+        <br>
+        Message: <input type="text" v-model="message"> <br>
+        Name: <input type="text" v-model="name">
+
+        <h1 v-if="on">Displayed if property on is true</h1>
+        <h1 v-else>Display if property on is false</h1>
     </div>
 
     <script>
@@ -27,7 +33,10 @@
         createApp({
             data() {
                 return {
-                    message: 'Hello Vue!',
+                    on: false, //the content will not be displayed if it is false, but if we change itu to true, then the content will be displayed
+                    message: 'Hello Vue!', //two way data-binding 
+                    //message: 'Hello Vue!' and v-model="message"
+                    //if you update the v-model, then the message: 'Hello Vue!' will also be updated
                     name: 'Green',
                     //Create 3 other properties and display them
                     nim: '2281065',

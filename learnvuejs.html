@@ -27,8 +27,11 @@
         <h1 v-else>Display if property on is false</h1>
 
         Age: <input type="text" v-model="age"> <br>
-        <h1 v-if="age <= 17">You're Still Young</h1>
-        <h1 v-else>You're Old</h1>
+        <h2 v-if="age <= 17">You're Still Young</h2>
+        <h2 v-else>You're Old</h2>
+
+        <br>
+        <img v-bind:src="image" alt="UNAI Chapel">
     </div>
 
     <script>
@@ -37,6 +40,7 @@
         createApp({
             data() {
                 return {
+                    image: 'chapel.jpg', //you can change the picture inside the property
                     on: false, //the content will not be displayed if it is false, but if we change itu to true, then the content will be displayed
                     message: 'Hello Vue!', //two way data-binding 
                     //message: 'Hello Vue!' and v-model="message"

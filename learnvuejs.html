@@ -8,9 +8,17 @@
 </head>
 <body>
     <div id="app">
-        {{ message }} from {{ name }}. My Student ID is {{nim}},
-        I am {{age}} years old, and I am a {{gender}}.
-        My favourite things are {{hobbies}}
+        {{ message }} from {{ name }}. 
+        <br> 
+        My Student ID is {{nim}}, 
+        <br>
+        I am {{age}} years old, and I am a {{gender}}. 
+        <br>
+        My favourite things are {{hobbies}} 
+        <br>
+        My other Favourites are {{favourites}}
+        <br>
+        My adrress is at {{ address }}
     </div>
 
     <script>
@@ -25,8 +33,23 @@
                     nim: '2281065',
                     age: '20',
                     gender: 'Female',
+
                     //Create a propertty using array data type
-                    hobbies : ["Singing", "Badminton", "Watching"]
+                    hobbies : ["Singing", "Badminton", "Watching"],
+
+                    //Create a property using object data type
+                    //the object should have at least 3 properties
+                    address: {
+                        street: 'Jl. Kolonel Masturi No. 288',
+                        district: 'Parongpong',
+                        regency: 'Bandung Barat',
+                        province: 'West Java'
+                    },
+                    favourites: {
+                        food: 'Noodles',
+                        drink: 'Fruite Juice',
+                        Color: 'Green'
+                    }
                 }
             }
         }).mount('#app');

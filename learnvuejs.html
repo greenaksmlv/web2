@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn VueJS</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .yellow {
+            color: yellow;
+        }
+        .green {
+            color: green;
+        }
+
+    </style>
 </head>
 <body>
     <div id="app">
@@ -32,6 +47,9 @@
 
         <br>
         <img v-bind:src="image" alt="UNAI Chapel">
+
+        <h2 v-bind:class="textColor">This is a Tittle</h2>
+        Text color: <input type="text" v-model="textColor">
     </div>
 
     <script>
@@ -40,6 +58,7 @@
         createApp({
             data() {
                 return {
+                    textColor: 'red',
                     image: 'chapel.jpg', //you can change the picture inside the property
                     on: false, //the content will not be displayed if it is false, but if we change itu to true, then the content will be displayed
                     message: 'Hello Vue!', //two way data-binding 

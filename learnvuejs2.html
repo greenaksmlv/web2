@@ -14,6 +14,7 @@
         <button v-on:click="count++">add 1</button>
         <button v-on:click="count--">minus 1</button>
         <p>Count is: {{ count }}</p>
+        <h3 v-if="count>=10">Congratulations! You have 10 counts or more</h3>
 
         Products:
         <ul>
@@ -29,7 +30,20 @@
                 {{ item.productName }} (${{ item.productPrice }})
             </li>
         </ul>
-        <h3 v-if="count>=10">Congratulations! You have 10 counts or more</h3>
+
+        <button v-on:click="doAlert">Do alert</button>
+        <br>
+        <button @click="writeToConsole">Write to Console</button>
+
+        <h3>Chat Application</h3>
+        <ul>
+            <li v-for="message in messages">
+                {{ message }}
+            </li>
+        </ul>
+        <input v-model="newMessage" type="text">
+        <button @click="addMessage">Send</button>
+   
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -39,6 +53,9 @@
         createApp({
             data() {
                 return {
+                    newMessage: '',
+                    messages: [],
+
                     message: 'Hello Vue!',
                     name: 'Green Melissa',
                     count: 0,
@@ -48,6 +65,19 @@
                     { productName: 'Xioami 90', productPrice: 99 },
                     { productName: 'Oppo V77', productPrice: 100 }
                     ]
+                }
+            },
+
+            methods: {
+                doAlert() {
+                    alert('Hi')
+                },
+                writeToConsole() {
+                    console.log('This is written to the console')
+                }, 
+                addMessage() {
+                    this.messages.push(this.newMessage)
+                    this.newMessage = ''
                 }
             }
         }).mount('#app')

@@ -6,6 +6,31 @@
     <title>Learn VueJS part 2</title>
 </head>
 <body>
-    
+    <div id="app">
+        {{ message }}
+        <br>
+        {{ name }}
+
+        <button v-on:click="count++">add 1</button>
+        <button v-on:click="count--">minus 1</button>
+        <p>Count is: {{ count }}</p>
+
+        <h3 v-if="count>=10">Congratulations! You have 10 counts or more</h3>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        const { createApp } = Vue
+
+        createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!',
+                    name: 'Green Melissa',
+                    count: 0,
+                }
+            }
+        }).mount('#app')
+    </script>
 </body>
 </html>

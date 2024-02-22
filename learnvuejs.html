@@ -50,6 +50,21 @@
 
         <h2 v-bind:class="textColor">This is a Tittle</h2>
         Text color: <input type="text" v-model="textColor">
+        <br><br>
+        <li v-for="item in items">
+            {{ item.message }}
+        </li>
+
+        <br>
+        Hobbies: <li v-for="hobby in hobbies">
+            {{ hobby}}
+        </li>
+
+        Address street: {{ address.street }}, {{ address.province }}
+    
+        <br><br>
+        <button v-on:click="count++">Add 1</button>
+        <p>Count is: {{ count }}</p>
     </div>
 
     <script>
@@ -58,7 +73,9 @@
         createApp({
             data() {
                 return {
-                    textColor: 'red',
+                    count: 0,
+                    items: [{message: 'A'}, {message: 'B'}],
+                    textColor: 'red', //if you want to change the color, then you should make a new class on the style CSS code
                     image: 'chapel.jpg', //you can change the picture inside the property
                     on: false, //the content will not be displayed if it is false, but if we change itu to true, then the content will be displayed
                     message: 'Hello Vue!', //two way data-binding 
